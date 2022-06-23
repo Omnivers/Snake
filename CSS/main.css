@@ -79,5 +79,25 @@ h2{
     width: 25%;
     margin-bottom: 10px;
 }
+.highScore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    box-shadow: black 20px 10px 50px ;
+    color: yellow;
+    padding: 30px;
+    margin: 50px;
+}
+.highScore h1{
+    font-size: 20px;
+    margin: 20px;  
+    color: white;
+}
+
+.highScore span{
+    font-size: 39px;
+    margin: 20px;
+}
   
   

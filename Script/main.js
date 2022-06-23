@@ -12,6 +12,10 @@ class snakePart{
 
 
 let score=0;
+var highscore = localStorage.getItem("highscore");
+document.getElementById("highscore").innerHTML=highscore;
+
+
 
 let speed=7;
 let tileCount = 20;
@@ -112,6 +116,14 @@ function checkCollision(){
     score=score+100;
     speed=speed+0.5;
     document.getElementById("Score").innerHTML=score;
+    if(highscore !== null){
+      if (score > highscore) {
+          localStorage.setItem("highscore", score);      
+      }
+  }
+  else{
+      localStorage.setItem("highscore", score);
+  }
   }
 }
 
