@@ -62,7 +62,12 @@ function isGameOver(){
       break;
     }
   }
+  if(gameOver){
+    window.location.reload();
+  }
+
   return gameOver;
+
 }
 function clearScreen() {
   ctx.fillStyle = 'black';
