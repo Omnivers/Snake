@@ -105,6 +105,7 @@ function checkCollision(){
     appleY = Math.floor(Math.random()*tileCount);
     tailLength++;
     score=score+100;
+    speed=speed+0.5;
     document.getElementById("Score").innerHTML=score;
   }
 }
@@ -143,7 +144,12 @@ function keyDown(event){
 
 }
 document.body.addEventListener("keydown",keyDown);
+function newGame(){
+  document.getElementById('canvas').style.display='none';
+  drawGame();
+  document.body.style.backgroundColor='#5d0081'
+  document.body.style.color="white"
+}
+document.getElementById("play").addEventListener("click", newGame);
 
-
-
-drawGame();
+  

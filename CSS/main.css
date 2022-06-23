@@ -9,3 +9,75 @@ body {
 canvas{
     box-shadow: black 20px 10px 50px ;
 }
+#canvas{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    margin: 0;
+    background: #5d0081;
+    border: 1px solid #000000;
+    box-shadow: black 20px 10px 50px ;
+    position: relative;
+    bottom:472px;
+}
+h6{
+    font-size: 7px;
+    color: #000000;
+}
+#canvas h1{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 100;
+    color:white;
+}
+#play{
+    cursor: pointer;
+    margin: 20px;
+    padding: 30px;
+    background: #062D00;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+#play:hover{
+    color: #5d0081;
+    transform: scale(1.2);
+}
+h2{
+    margin: 10px 0px 10px;
+    font-size: 10px;
+}
+.keys{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.arr {
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    margin: 1px;
+    transition: all .05s linear;
+  }
+.arr:hover{
+    color: #062D00;
+}
+.fa{
+    font-size: 20px;
+    background-color: grey;
+    padding: 10px;
+}
+.up {
+    width: 100%;
+}
+.left,.right,.down{
+    width: 25%;
+    margin-bottom: 10px;
+}
+  
+  
