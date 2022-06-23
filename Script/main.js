@@ -12,7 +12,7 @@ class snakePart{
 
 
 let score=0;
-var highscore = localStorage.getItem("highscore");
+var highscore = sessionStorage.getItem("highscore");
 document.getElementById("highscore").innerHTML=highscore;
 
 
@@ -118,11 +118,11 @@ function checkCollision(){
     document.getElementById("Score").innerHTML=score;
     if(highscore !== null){
       if (score > highscore) {
-          localStorage.setItem("highscore", score);      
+          sessionStorage.setItem("highscore", score);      
       }
   }
   else{
-      localStorage.setItem("highscore", score);
+      sessionStorage.setItem("highscore", score);
   }
   }
 }
