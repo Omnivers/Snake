@@ -34,23 +34,36 @@ let yVelocity=0;
 
 function drawGame(){
   changePosition();
-  // let result = isGameOver();
-  // if(result){
-  //   return;
-  // }
+  let result = isGameOver();
+  if(result){
+    return;
+  }
   clearScreen();
   checkCollision();
   drawApple();
   drawSnake();
   setTimeout(drawGame, 1000/ speed);
 }
-// function isGameOver(){
-//   var gameOver=false;
-//   if(headX<0){
-//     gameOver=true;
-//   }
-//   return gameOver;
-// }
+function isGameOver(){
+  var gameOver=false;
+  if(yVelocity === 0 && xVelocity === 0){
+    return false;
+  }
+  if(headX<0 || headY<0){
+    gameOver=true;
+  }
+  else if(headY === tileCount || headX === tileCount){
+    gameOver=true;
+  }
+  for(i=0;i<snakeParts.length;i++){
+    Part=snakeParts[i];
+    if(Part.x === headX && Part.y === headY){
+      gameOver=true;
+      break;
+    }
+  }
+  return gameOver;
+}
 function clearScreen() {
   ctx.fillStyle = 'black';
   ctx.fillRect(0,0,canvas.width,canvas.height);
