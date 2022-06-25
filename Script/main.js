@@ -130,6 +130,10 @@ function checkCollision(){
 }
 
 function keyDown(event){
+    // if(event.keyCode == 80){
+    //   xVelocity = 0;
+    //   yVelocity = 0;
+    // } pour rajouté la pause 
     if(event.keyCode == 38){
         if(yVelocity == 1){
           return;
