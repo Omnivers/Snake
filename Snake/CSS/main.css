@@ -15,10 +15,10 @@ main{
 aside{
     width: 5%;
 }
-.replay{
+/* .replay{
     /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(255,0,0,1) 100%); */
     /* color: white; */
-}
+ /* } */
 .replay #canvas{
     background-color: red;
 }

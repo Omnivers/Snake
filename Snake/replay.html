@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"/>
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <title>Snake</title>
+</head>
+<body class="replay">
+      <main>
+      <h1>SNAKE</h1>
+      <canvas id="game" width="400" height="400"></canvas>
+      <h3>Score</h3>
+      <div id="Score">0</div>
+      <div class="gameover" id="canvas">
+        <h6>By Omnivers </h6>
+        <h1>GAME OVER</h1>
+        <button class="btn playagain" id="play"><span class="glyphicon glyphicon-refresh"></span></button>
+        <h2>Instruction</h2>
+        <section class="keys">
+            <div class="up arr"><i class="fa fa-arrow-up"></i></div>
+            <div class="left arr"><i class="fa fa-arrow-left"></i></div>  
+            <div class="down arr"><i class="fa fa-arrow-down"></i></div>
+            <div class="right arr"><i class="fa fa-arrow-right"></i></div>
+        </section>
+        <h6>Have fun :)</h6>
+      </div>
+
+
+      <div class="highScore">
+        <h1> Your highest score is : </h1>
+        <span id="highscore">239483</span>
+      </div>
+      </main>
+      <aside>
+        <span class="glyphicon glyphicon-pause"></span>
+        <span class="glyphicon glyphicon-volume-off"></span>
+      </aside>
+      <script src="./Script/main.js"></script>
+</body>
+</html>

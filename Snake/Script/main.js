@@ -68,7 +68,7 @@ function isGameOver(){
   }
   if(gameOver){
     // window.location.reload();
-    location.replace("../replay/replay.html");
+    location.replace("../replay.html");
   }
 
   return gameOver;
