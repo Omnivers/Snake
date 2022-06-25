@@ -68,8 +68,7 @@ function isGameOver(){
   }
   if(gameOver){
     // window.location.reload();
-    location.replace("../replay.html");
-    
+    location.replace("../replay/replay.html");
   }
 
   return gameOver;
@@ -169,6 +168,7 @@ function keyDown(event){
 document.body.addEventListener("keydown",keyDown);
 function newGame(){
   document.getElementById('canvas').style.display='none';
+  document.body.classList.remove("replay");
   drawGame();
   document.body.style.backgroundColor='#5d0081'
   document.body.style.color="white"

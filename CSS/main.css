@@ -16,8 +16,14 @@ aside{
     width: 5%;
 }
 .replay{
-    background-color: #5d0081;
-    color: white;
+    /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(255,0,0,1) 100%); */
+    /* color: white; */
+}
+.replay #canvas{
+    background-color: red;
+}
+.replay .btn:hover{
+    color:white;
 }
 canvas{
     box-shadow: black 20px 10px 50px ;
@@ -32,6 +38,7 @@ canvas{
     background: #5d0081;
     border: 1px solid #000000;
     box-shadow: black 20px 10px 50px ;
+    color: white;
     position: relative;
     bottom:476px;
 }
@@ -43,7 +50,6 @@ h6{
     font-size: 32px;
     text-align: center;
     font-weight: 100;
-    color:white;
 }
 #pause{
     display: flex;
@@ -120,7 +126,6 @@ h2{
     margin: 20px;  
     color: white;
 }
-
 .highScore span{
     font-size: 39px;
     margin: 20px;
@@ -136,4 +141,10 @@ cursor: pointer;
 }
 .glyphicon:hover{
     background-color: yellow;
+}
+.glyphicon-refresh{
+border: none;
+}
+.glyphicon-refresh:hover{
+    background-color: black;
 }
