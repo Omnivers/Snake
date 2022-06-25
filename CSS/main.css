@@ -12,6 +12,9 @@ main{
     flex-direction: column;
     align-items: center;
 }
+aside{
+    width: 5%;
+}
 .replay{
     background-color: #5d0081;
     color: white;
