@@ -67,7 +67,9 @@ function isGameOver(){
     }
   }
   if(gameOver){
-    window.location.reload();
+    // window.location.reload();
+    location.replace("../replay.html");
+    
   }
 
   return gameOver;
@@ -120,11 +122,11 @@ function checkCollision(){
       if (score > highscore) {
           sessionStorage.setItem("highscore", score);      
       }
-  }
-  else{
-      sessionStorage.setItem("highscore", score);
-  }
-  }
+    }
+    else{
+        sessionStorage.setItem("highscore", score);
+    }
+    }
 }
 
 function keyDown(event){

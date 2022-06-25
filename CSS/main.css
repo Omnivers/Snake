@@ -1,10 +1,20 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-y: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+main{
+    width: 95%;
     font-family: 'Press Start 2P', cursive;
     display:flex;
     flex-direction: column;
     align-items: center;
+}
+.replay{
+    background-color: #5d0081;
+    color: white;
 }
 canvas{
     box-shadow: black 20px 10px 50px ;
@@ -20,7 +30,7 @@ canvas{
     border: 1px solid #000000;
     box-shadow: black 20px 10px 50px ;
     position: relative;
-    bottom:472px;
+    bottom:476px;
 }
 h6{
     font-size: 7px;
@@ -36,7 +46,7 @@ h6{
     cursor: pointer;
     margin: 20px;
     padding: 30px;
-    background: #062D00;
+    background: #000000;
     font-weight: 400;
     font-size: 32px;
     text-align: center;
@@ -65,7 +75,7 @@ h2{
     transition: all .05s linear;
   }
 .arr:hover{
-    color: #062D00;
+    color: rgb(0, 0, 0,0.8);
 }
 .fa{
     font-size: 20px;
@@ -87,7 +97,7 @@ h2{
     box-shadow: black 20px 10px 50px ;
     color: yellow;
     padding: 30px;
-    margin: 50px;
+    margin: 30px;
 }
 .highScore h1{
     font-size: 20px;
@@ -99,5 +109,15 @@ h2{
     font-size: 39px;
     margin: 20px;
 }
-  
-  
+::-webkit-scrollbar{
+    display: none;
+}
+.glyphicon{
+border: solid 3px black;
+border-radius: 20px;
+padding: 10px;
+cursor: pointer;
+}
+.glyphicon:hover{
+    background-color: yellow;
+}
