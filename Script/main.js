@@ -68,7 +68,7 @@ function isGameOver(){
   }
   if(gameOver){
     // window.location.reload();
-    location.replace("Snake/replay.html");
+    location.replace("../replay.html");
   }
 
   return gameOver;
