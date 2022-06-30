@@ -67,8 +67,8 @@ function isGameOver(){
     }
   }
   if(gameOver){
-    // window.location.reload();
     location.replace("https://omnivers.github.io/Snake/replay.html");
+    // location.replace("./replay.html");
   }
 
 
